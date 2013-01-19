@@ -1,0 +1,24 @@
+{
+  "name": "moz-morris/slim-skeleton",
+  "description": "A Slim Framework skeleton using Twig & Sass",
+  "keywords": ["slim","skeleton","sass","twig"],
+  "homepage": "https://github.com/MozMorris/slim-skeleton",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Moz Morris",
+          "email": "moz@earthview.co.uk",
+          "homepage": "http://www.mozmorris.com/"
+      }
+  ],
+  "repositories": [
+      {
+          "type": "vcs",
+          "url": "https://github.com/MozMorris/Slim"
+      }
+  ],
+  "require": {
+    "slim/slim"    : "dev-webroot",
+    "twig/twig"    : "v1.12.0"
+  }
+}
