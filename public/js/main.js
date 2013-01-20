@@ -1,9 +1,7 @@
-(function(w) {
-  var app = w.app||{};
+var app = window.app||{};
 
-  app.loaded = function() {
-    console.log("Window loaded.");
-  };
+app.loaded = function() {
+  console.log("Window loaded.");
+};
 
-  w.onload = app.loaded;
-}(window));
+window.onload = app.loaded;
