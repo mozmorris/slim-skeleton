@@ -2,10 +2,19 @@
 
 require '../app/bootstrap.php';
 
-// Instantiate Twig view class
-$twigView = new \Slim\Extras\Views\Twig();
+$twigView = new \Slim\Views\Twig();
 
-// Instantiate and configure Slim
+// Configure Twig
+$twigView->parserOptions = array(
+  'autoescape'       => true,
+  'auto_reload'      => true,
+  'cache'            => realpath('../app/tmp'),
+  'charset'          => 'utf-8',
+  'optimizations'    => -1,
+  'strict_variables' => false,
+);
+
+// Configure Slim
 $app = new \Slim\Slim(array(
   'debug'          => true,
   'log.enabled'    => true,
