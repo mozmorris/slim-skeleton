@@ -19,7 +19,7 @@ The app is set up so that you can point Apache at the root folder and with some 
 
 ## Twig
 
-I like the [Django](https://www.djangoproject.com/) template language and Twig is really similar. So, Twig templates it is. There's some config happening in `app/boostrap.php` and the cached templates are written to `app/tmp`. You'll need to `chmod` that folder.
+I like the [Django](https://www.djangoproject.com/) template language and Twig is really similar. So, Twig templates it is. There's some config happening in `public/index.php` and the cached templates are written to `app/tmp`. You'll need to `chmod` that folder.
 
 ## Sass
 
